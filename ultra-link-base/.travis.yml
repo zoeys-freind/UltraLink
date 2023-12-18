@@ -15,8 +15,7 @@ script:
 deploy:
   provider: pypi
   username: "__token__"
-  password:
-    secure: "pypi-AgEIcHlwaS5vcmcCJGMwMTI5ZjgxLTViNWMtNGQxMC04MzcwLTBkYzMyNTE0M2I3OAACKlszLCI3ZDdlOWMzMS05MjhjLTQ2YzQtOTk5NS03ZWE2YmZmNDllMzAiXQAABiDrsYy4VPAOZbVEU7ymvHBp4BksYaXty11n-UiMdfAKrQ"
+  password: "pypi-AgEIcHlwaS5vcmcCJGMwMTI5ZjgxLTViNWMtNGQxMC04MzcwLTBkYzMyNTE0M2I3OAACKlszLCI3ZDdlOWMzMS05MjhjLTQ2YzQtOTk5NS03ZWE2YmZmNDllMzAiXQAABiDrsYy4VPAOZbVEU7ymvHBp4BksYaXty11n-UiMdfAKrQ"
   on:
     tags: true
 
