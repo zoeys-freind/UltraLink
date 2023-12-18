@@ -1,0 +1,23 @@
+language: python
+python:
+  - "3.7"
+  - "3.8"
+  - "3.9"
+  - "3.10"
+  - "3.11"
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - python -m unittest discover
+
+deploy:
+  provider: pypi
+  username: "__token__"
+  password: "pypi-AgEIcHlwaS5vcmcCJGMwMTI5ZjgxLTViNWMtNGQxMC04MzcwLTBkYzMyNTE0M2I3OAACKlszLCI3ZDdlOWMzMS05MjhjLTQ2YzQtOTk5NS03ZWE2YmZmNDllMzAiXQAABiDrsYy4VPAOZbVEU7ymvHBp4BksYaXty11n-UiMdfAKrQ"
+  on:
+    tags: true
+
+notifications:
+  email: false
